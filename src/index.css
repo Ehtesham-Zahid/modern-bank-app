@@ -138,24 +138,6 @@
   filter: blur(750px);
 }
 
-@layer base {
-  :root {
-    /* Custom Colors */
-    --color-primary: #00040f;
-    --color-secondary: #00f6ff;
-    --color-dim-white: rgba(255, 255, 255, 0.7);
-    --color-dim-blue: rgba(9, 151, 124, 0.1);
-
-    /* Custom Screens */
-    --screen-xs: 480px;
-    --screen-ss: 620px;
-    --screen-sm: 768px;
-    --screen-md: 1060px;
-    --screen-lg: 1200px;
-    --screen-xl: 1700px;
-  }
-}
-
 @layer utilities {
   .text-dim-white {
     color: var(--color-dim-white);
@@ -178,4 +160,20 @@
   html {
     font-family: "Poppins", sans-serif;
   }
+}
+
+@theme {
+  /* Custom Colors */
+  --color-primary: #00040f;
+  --color-secondary: #00f6ff;
+  --color-dim-white: rgba(255, 255, 255, 0.7);
+  --color-dim-blue: rgba(9, 151, 124, 0.1);
+
+  /* Custom Screens */
+  --breakpoint-xs: 480px;
+  --breakpoint-ss: 620px;
+  --breakpoint-sm: 768px;
+  --breakpoint-md: 1060px;
+  --breakpoint-lg: 1200px;
+  --breakpoint-xl: 1700px;
 }
